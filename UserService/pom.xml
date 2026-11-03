@@ -54,6 +54,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
+        
 
         <!-- Spring Data JPA -->
         <dependency>
@@ -98,6 +99,7 @@
             <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
+        
 
         <!-- MySQL -->
         <dependency>
@@ -135,6 +137,16 @@
             <version>0.11.5</version>
             <scope>runtime</scope>
         </dependency>
+        <!-- Spring Cloud LoadBalancer -->
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-loadbalancer</artifactId>
+</dependency>
+<!-- Spring Cloud Circuit Breaker - Resilience4j -->
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-circuitbreaker-resilience4j</artifactId>
+</dependency>
 
         <!-- Actuator Test -->
         <dependency>
@@ -165,6 +177,8 @@
         </dependency>
 
     </dependencies>
+    <!-- Spring Cloud LoadBalancer -->
+
 
     <!-- Spring Cloud Dependency Management -->
     <dependencyManagement>
